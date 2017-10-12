@@ -1,0 +1,17 @@
+<div class="jumbo">
+  <div class="right tomster"></div>
+  <h2>Rentals List</h2>
+
+  {{#each model as |rental|}}
+  <article class="listing">
+    <h3>{{rental.name}}</h3>
+    <div class="detail name">
+      <span>Name:</span> {{rental.name}}
+    </div>
+    <div class="detail daily_rate">
+      <span>Daily Rate:</span> {{rental.daily_rate}}
+    </div>
+  </article>
+  {{/each}}
+
+</div>
