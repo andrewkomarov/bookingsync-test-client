@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # bookingsync-test-client
 
 This README outlines the details of collaborating on this Ember application.
@@ -48,3 +49,6 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+=======
+# bookingsync-test-client
+>>>>>>> 32abd016cef8d3d45c2dfff38e3a0c28797a10c7
