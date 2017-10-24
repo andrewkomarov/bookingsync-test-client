@@ -11,7 +11,11 @@
     <div class="detail daily_rate">
       <span>Daily Rate:</span> {{rental.daily_rate}}
     </div>
+    <div class="detail rental_destroy">
+      <span><a {{action "removeRental" rental}} href="#">Remove</a></span>
+    </div>
   </article>
+  <hr/>
   {{/each}}
 
 </div>
