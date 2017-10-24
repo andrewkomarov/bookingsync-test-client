@@ -4,9 +4,9 @@
 
   {{#each model as |rental|}}
   <article class="listing">
-    <h3>{{rental.name}}</h3>
+    <h3>{{#link-to "edit-rental" rental}} {{rental.name}} {{/link-to}}</h3>
     <div class="detail name">
-      <span>Name:</span> {{rental.name}}
+      <span>Name:</span> {{#link-to "edit-rental" rental}} {{rental.name}} {{/link-to}}
     </div>
     <div class="detail daily_rate">
       <span>Daily Rate:</span> {{rental.daily_rate}}
