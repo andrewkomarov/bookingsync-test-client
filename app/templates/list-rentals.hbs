@@ -1,6 +1,5 @@
 <div class="jumbo">
-  <div class="right tomster"></div>
-  <h2>Rentals List</h2>
+  <h3>Rentals List</h3>
 
   {{#each model as |rental|}}
   <article class="listing">
@@ -11,8 +10,11 @@
     <div class="detail daily_rate">
       <span>Daily Rate:</span> {{rental.daily_rate}}
     </div>
-    <div class="detail rental_destroy">
+    <div class="detail remove-rental">
       <span><a {{action "removeRental" rental}} href="#">Remove</a></span>
+    </div>
+    <div class="detail list-bookings green-link">
+      <span>{{#link-to "list-bookings" rental}} View Bookings {{/link-to}}</span>
     </div>
   </article>
   <hr/>

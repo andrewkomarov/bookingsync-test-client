@@ -1,0 +1,20 @@
+<div class="jumbo">
+  <h3>Bookings List for rental: {{#link-to "edit-rental" rental}} {{model.name}} {{/link-to}}</h3>
+
+  {{#each model.bookings as |booking|}}
+  <article class="listing">
+    <h3>{{booking.email}}</h3>
+    <div class="detail start_at">
+      <span>Start At:</span> {{booking.start_at}}
+    </div>
+    <div class="detail end_at">
+      <span>End At:</span> {{booking.end_at}}
+    </div>
+    <div class="detail price">
+      <span>Price:</span> {{booking.price}}
+    </div>
+  </article>
+  <hr/>
+  {{/each}}
+
+</div>

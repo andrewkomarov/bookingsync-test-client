@@ -9,7 +9,8 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('add-rental');
   this.route('list-rentals');
-  this.route('edit-rental',{ path: '/edit-rental/:rental_id' });
+  this.route('edit-rental', { path: '/edit-rental/:rental_id' });
+  this.route('list-bookings', { path: '/list-bookings/:rental_id' });
 });
 
 export default Router;
