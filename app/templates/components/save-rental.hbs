@@ -1,13 +1,11 @@
 {{yield}}
 
-{{model}}
-
 <p>
   <form {{action "saveRental" on="submit"}}>
     {{input value=name placeholder="Rental Name"}}
     <br/>
     {{input value=daily_rate placeholder="Daily Rate"}}
-    <p/>
-    <button type="submit">Submit</button>
+    <p></p>
+    <span><button class="app-button" type="submit">Submit</button></span>
   </form>
 </p>

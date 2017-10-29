@@ -1,5 +1,27 @@
-.home_link {
+.home_link, .book-it {
   float: right
+}
+
+.book-it {
+  width: 150px;
+  height: 25px;
+}
+
+.app-button {
+ /* background-color: green;*/
+  width: 135px;
+  height: 25px;
+}
+
+input[type=text] {
+  width: 250px;
+  padding: 5px;
+  border: 1px dotted #999;
+  border-radius: 0px;
+}
+
+input[type=text].input-short {
+  width: 100px;
 }
 
 .green-link a:link { text-decoration: none; color: Green; border-bottom:1px dotted;}

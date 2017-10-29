@@ -1,0 +1,20 @@
+{{outlet}}
+<div class="jumbo">
+  <h3>Available Rentals</h3>
+
+  {{#each model as |rental|}}
+  <article class="listing">
+    <h3>{{rental.name}}</h3>
+    <div class="detail daily_rate">
+      <span>Daily Rate: </span>${{rental.daily_rate}}
+    </div>
+    <div>
+      <span><button class="book-it" {{action 'bookRental' rental}}>Book It!</button></span>
+    </div>
+  </article>
+  <hr/>
+  {{/each}}
+
+</div>
+
+

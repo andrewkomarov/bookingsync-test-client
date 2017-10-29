@@ -1,0 +1,26 @@
+{{outlet}}
+<div class="jumbo">
+  <h3>{{model.name}}</h3>
+    <div class="detail daily_rate">
+      <span>Daily Rate:</span> ${{model.daily_rate}}
+    </div>
+    <p></p>
+    <p>
+      <form {{action "bookRental" model on="submit"}}>
+         {{input value=email placeholder="User Email"}}
+         <br/><br/>
+         <p>
+         {{input value=start_at placeholder="Start At" class='input-short'}}
+         <br/>
+         {{input value=end_at placeholder="End At" class='input-short'}}
+         <br/>
+         {{input value=price class='input-short'}}
+         </p> 
+          <p></p>
+        <button class="app-button">Make Reservation</button>
+      </form>
+    </p>
+
+</div>
+
+

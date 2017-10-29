@@ -11,6 +11,8 @@ Router.map(function() {
   this.route('list-rentals');
   this.route('edit-rental', { path: '/edit-rental/:rental_id' });
   this.route('list-bookings', { path: '/list-bookings/:rental_id' });
+  this.route('available-rentals');
+  this.route('book-rental', { path: '/book-rental/:rental_id' });
 });
 
 export default Router;
