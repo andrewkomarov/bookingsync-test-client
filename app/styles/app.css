@@ -8,7 +8,6 @@
 }
 
 .app-button {
- /* background-color: green;*/
   width: 135px;
   height: 25px;
 }
@@ -22,6 +21,11 @@ input[type=text] {
 
 input[type=text].input-short {
   width: 100px;
+}
+
+#price {
+  color: green;
+  font-weight: bold;
 }
 
 .green-link a:link { text-decoration: none; color: Green; border-bottom:1px dotted;}

@@ -7,17 +7,17 @@
     <p></p>
     <p>
       <form {{action "bookRental" model on="submit"}}>
-         {{input value=email placeholder="User Email"}}
-         <br/><br/>
-         <p>
-         {{input value=start_at placeholder="Start At" class='input-short'}}
-         <br/>
-         {{input value=end_at placeholder="End At" class='input-short'}}
-         <br/>
-         {{input value=price class='input-short'}}
-         </p> 
-          <p></p>
+        {{input value=email placeholder="User Email"}}
+        <br/><br/>
+        <p>
+        {{bootstrap-datepicker value=start_at placeholder="Start At" class="input-short" format="yyyy-mm-dd"}}
+        <br/>
+        {{bootstrap-datepicker value=end_at placeholder="End At" class="input-short" format="yyyy-mm-dd" focus-in=(action "updatePrice")}}
+        </p> 
+        <p></p>
         <button class="app-button">Make Reservation</button>
+        <p></p>
+        <div id="price"></div>      
       </form>
     </p>
 
