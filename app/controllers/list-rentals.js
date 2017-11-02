@@ -5,9 +5,12 @@ export default Ember.Controller.extend({
     removeRental(params) {
       var rental_id = params.get('id');
       this.get('store').findRecord('rental', rental_id, { backgroundReload: false }).then(function(rental) {
-      rental.deleteRecord();
-      //rental.get('isDeleted') ; // => true
-      rental.save();
+        rental.deleteRecord();
+        //rental.get('isDeleted') ; // => true
+        rental.save().then((rental) => {
+        }).catch((adapterError) => {
+          alert(adapterError);
+        });
       });
     }
   }

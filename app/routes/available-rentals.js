@@ -6,5 +6,11 @@ export default Ember.Route.extend({
   // available for making reservations 
   model() {
     return this.get('store').findAll('rental');
+  },
+  actions: {
+    error(reason) {
+      alert(reason); // fail
+      this.transitionTo('index');
+    }
   }
 });

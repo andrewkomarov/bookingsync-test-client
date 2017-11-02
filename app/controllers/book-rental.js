@@ -24,8 +24,11 @@ export default Ember.Controller.extend({
         end_at: end_at,
         price: price
       });
-     booking.save()
-       .then(this.transitionToRoute('index'));
+      booking.save().then((booking) => {
+        this.transitionToRoute('index');
+      }).catch((adapterError) => {
+        alert(adapterError);
+      });
     },
     updatePrice() {
       var daily_rate = this.get('model').get('daily_rate');
