@@ -7,7 +7,7 @@ export default Ember.Controller.extend({
       this.get('store').findRecord('rental', rental_id, { backgroundReload: false }).then(function(rental) {
         rental.deleteRecord();
         //rental.get('isDeleted') ; // => true
-        rental.save().then((rental) => {
+        rental.save().then(() => {
         }).catch((adapterError) => {
           alert(adapterError);
         });

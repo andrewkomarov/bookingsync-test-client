@@ -2,9 +2,9 @@
 
 <p>
   <form {{action "saveRental" on="submit"}}>
-    {{input value=name placeholder="Rental Name"}}
+    {{input value=name placeholder="Rental Name"}} <div class="form-error">{{validationErrors.name}}</div>
     <br/>
-    {{input value=daily_rate placeholder="Daily Rate"}}
+    {{input value=daily_rate placeholder="Daily Rate"}} <div class="form-error">{{validationErrors.daily_rate}}</div>
     <p></p>
     <span><button class="app-button" type="submit">Submit</button></span>
   </form>

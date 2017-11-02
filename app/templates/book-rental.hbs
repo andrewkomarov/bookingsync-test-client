@@ -7,12 +7,12 @@
     <p></p>
     <p>
       <form {{action "bookRental" model on="submit"}}>
-        {{input value=email placeholder="User Email"}}
+        {{input value=email placeholder="User Email"}} <div class="form-error">{{validationErrors.email}}</div>
         <br/><br/>
         <p>
-        {{bootstrap-datepicker value=start_at placeholder="Start At" class="input-short" format="yyyy-mm-dd"}}
+        {{bootstrap-datepicker value=start_at placeholder="Start At" class="input-short" format="yyyy-mm-dd"}} <div class="form-error">{{validationErrors.start_at}}</div>
         <br/>
-        {{bootstrap-datepicker value=end_at placeholder="End At" class="input-short" format="yyyy-mm-dd" focus-in=(action "updatePrice")}}
+        {{bootstrap-datepicker value=end_at placeholder="End At" class="input-short" format="yyyy-mm-dd" focus-in=(action "updatePrice")}} <div class="form-error">{{validationErrors.end_at}}</div>
         </p> 
         <p></p>
         <button class="app-button">Make Reservation</button>

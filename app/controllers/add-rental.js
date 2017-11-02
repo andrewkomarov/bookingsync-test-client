@@ -13,7 +13,7 @@ export default Ember.Controller.extend({
      // this.transitionToRoute('list-rentals')
      // Check this out for more details: https://github.com/emberjs/data/issues/4421
      // We go to the different route insted (main page in this case)
-     rental.save().then((rental) => {
+     rental.save().then(() => {
        this.transitionToRoute('index');
      }).catch((adapterError) => {
        alert(adapterError);

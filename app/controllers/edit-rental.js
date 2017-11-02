@@ -8,7 +8,7 @@ export default Ember.Controller.extend({
       var model = this.get('model');
       model.set('name', name);
       model.set('daily_rate', daily_rate);
-      model.save().then((rental) => {
+      model.save().then(() => {
         this.transitionToRoute('list-rentals');
       }).catch((adapterError) => {
         alert(adapterError);
