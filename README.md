@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # bookingsync-test-client
 
 This README outlines the details of collaborating on this Ember application.
@@ -18,6 +17,7 @@ You will need the following things properly installed on your computer.
 * `git clone <repository-url>` this repository
 * `cd bookingsync-test-client`
 * `npm install`
+* **Change host address of the API server (e.g. http://dev.someproject.com:4200) in _adapters/application.js_**
 
 ## Running / Development
 
@@ -49,6 +49,4 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-=======
-# bookingsync-test-client
->>>>>>> 32abd016cef8d3d45c2dfff38e3a0c28797a10c7
+
