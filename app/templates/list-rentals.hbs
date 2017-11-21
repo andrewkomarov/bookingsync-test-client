@@ -3,7 +3,7 @@
   <h3>Rentals List</h3>
 
   {{#each model as |rental|}}
-  <article class="listing">
+  <article class="listing" data-test-list-rentals>
     <h3>{{#link-to "edit-rental" rental}} {{rental.name}} {{/link-to}}</h3>
     <div class="detail name">
       <span>Name:</span> {{#link-to "edit-rental" rental}} {{rental.name}} {{/link-to}}
