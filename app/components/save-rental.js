@@ -14,7 +14,7 @@ export default Ember.Component.extend(formValidation, {
       name: {
         required: true,
         format: 'words',
-        message: 'Name error',
+        message: 'Name error (letters only)',
         requiredMessage: 'You must enter a name'
       },
       daily_rate: {

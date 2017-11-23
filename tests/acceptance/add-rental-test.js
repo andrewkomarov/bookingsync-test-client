@@ -12,7 +12,7 @@ test('It should succeffully create a new rental', function(assert) {
     assert.notOk(find(testSelector('list-rentals')).length, 'Rentals list should not be empty')
   });
 
-  const name = 'TEST Rental from Appearance';
+  const name = 'Generated from Acceptance Test Suit';
   const dailyRate = 150;
 
   page

@@ -4,7 +4,7 @@ import {
   fillable,
   visitable
 } from 'ember-cli-page-object';
-import testSelector from 'ember-test-selectors';;
+import testSelector from 'ember-test-selectors';
 
 export default create({
   visit: visitable('/add-rental'),

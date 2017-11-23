@@ -9,7 +9,7 @@
       <span>Daily Rate: </span>${{rental.daily_rate}}
     </div>
     <div>
-      <span><button class="book-it" {{action 'bookRental' rental}}>Book It!</button></span>
+      <span><button data-test-rental-id=rental.id class="book-it" {{action 'bookRental' rental}}>Book It!</button></span>
     </div>
   </article>
   <hr/>
