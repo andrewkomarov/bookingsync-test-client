@@ -12,7 +12,15 @@
       <span>Daily Rate: </span>${{rental.daily_rate}}
     </div>
     <div class="detail remove-rental">
-      <span><a {{action "removeRental" rental}} href="#">Remove</a></span>
+      <span>
+
+      {{#if rental.isTestRental}}
+         <a data-test-rental-id=rental.id {{action "removeRental" rental}} href="#">Remove</a>
+      {{else}}
+         <a {{action "removeRental" rental}} href="#">Remove</a>
+      {{/if}}
+
+      </span>
     </div>
     <div class="detail list-bookings green-link">
       <span>{{#link-to "list-bookings" rental}} View Bookings {{/link-to}}</span>

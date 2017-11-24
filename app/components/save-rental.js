@@ -15,12 +15,13 @@ export default Ember.Component.extend(formValidation, {
         required: true,
         format: 'words',
         message: 'Name error (letters only)',
-        requiredMessage: 'You must enter a name'
+        requiredMessage: 'You must enter name'
       },
       daily_rate: {
         required: true,
         format: 'number',
-        message: 'Rate error'
+        message: 'Rate error',
+        requiredMessage: 'You must enter rate'
       }
     }
   }
