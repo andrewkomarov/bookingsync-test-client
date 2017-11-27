@@ -20,6 +20,13 @@ export default Ember.Controller.extend(formValidation, {
       var start_at = this.get('start_at');
       var end_at = this.get('end_at');
 
+      // ECMAScript 5 interprets ISO 8601 string without time zone as UTC
+      // therefore we just split it up and use it as parameters
+      // Datepicker issue is described here: https://github.com/soulim/ember-cli-bootstrap-datepicker/issues/42 
+      start_at = new Date(start_at.getFullYear(), start_at.getMonth(), start_at.getDate()+1, 0, 0, 0);
+      end_at = new Date(end_at.getFullYear(), end_at.getMonth(), end_at.getDate()+1, 0, 0, 0);
+
+
       // start_at and end_at values are empty in Acceptance tests
       // when dealing with ember-cli-bootstrap-datepicker
       // via the fillable function
