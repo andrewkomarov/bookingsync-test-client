@@ -15,7 +15,8 @@ export default Ember.Object.extend({
     // therefore we just split it up and use it as parameters
     // Datepicker issue is described here: https://github.com/soulim/ember-cli-bootstrap-datepicker/issues/42
     //
-    return new Date(date.getFullYear(), date.getMonth(), date.getDate()+1, 0, 0, 0);
+    if (date)
+      return new Date(date.getFullYear(), date.getMonth(), date.getDate()+1, 0, 0, 0);
   },
   outputAdapterErrors(errors) {
     //

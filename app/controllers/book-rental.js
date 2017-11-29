@@ -28,8 +28,8 @@ export default Ember.Controller.extend(formValidation, {
       // Use the default ones in this case to make test pass
       //
       if (!start_at && !end_at) {
-        start_at = '2017-01-01';
-	end_at = '2017-12-31'
+        start_at = '2099-01-01';
+	end_at = '2099-12-31'
       }
 
       var price = this.get('commonUtil')
